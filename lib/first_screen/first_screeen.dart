@@ -127,7 +127,11 @@ class _FirstScreenState extends State<FirstScreen> {
                       child: Column(
                         children: [
                           CircleAvatar(
+                            /* child: Image.asset("asset/image/g3.jpeg",
+                                fit: BoxFit.fill),*/
+                            backgroundImage: AssetImage("asset/image/g3.jpeg"),
                             radius: 50,
+                            backgroundColor: Colors.grey,
                           ),
                           SizedBox(
                             height: 1.h,
@@ -164,8 +168,18 @@ class _FirstScreenState extends State<FirstScreen> {
                             margin: EdgeInsets.all(8),
                             height: 150,
                             width: 200,
+                            child: Row(
+                              children: [
+                                Padding(
+                                  padding: EdgeInsets.all(20),
+                                  child: Text("min 40% off"),
+                                ),
+                              ],
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                            ),
                             decoration: BoxDecoration(
-                                color: Colors.blueAccent,
+                                color: Colors.grey.shade300,
                                 borderRadius: BorderRadius.circular(10)),
                           ),
                           Positioned(
@@ -176,7 +190,12 @@ class _FirstScreenState extends State<FirstScreen> {
                               height: 80,
                               width: 150,
                               decoration: BoxDecoration(
-                                  color: Colors.red,
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                        "asset/image/ff1.png",
+                                      ),
+                                      fit: BoxFit.cover),
+                                  color: Colors.white,
                                   borderRadius: BorderRadius.circular(10)),
                             ),
                           ),

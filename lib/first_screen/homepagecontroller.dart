@@ -8,7 +8,7 @@ class HomeController extends GetxController {
   final pageController = PageController(initialPage: 0);
   @override
   void onInit() {
-    ApiService.getAllEmployees();
+    ApiService.getdatameth();
     super.onInit();
   }
 }

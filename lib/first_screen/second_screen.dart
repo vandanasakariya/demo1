@@ -9,7 +9,7 @@ class SecondScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: GridView.builder(
-        padding: const EdgeInsets.only(top: 10, left: 8, right: 8),
+        padding: EdgeInsets.only(top: 10, left: 8, right: 8),
         shrinkWrap: true,
         itemCount: 10,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -34,8 +34,10 @@ class SecondScreen extends StatelessWidget {
                       color: Colors.cyan.shade500,
                       borderRadius: BorderRadius.circular(8),
                       image: DecorationImage(
-                        image: AssetImage(""),
-                      ),
+                          image: AssetImage(
+                            "asset/image/j6.jpeg",
+                          ),
+                          fit: BoxFit.cover),
                     ),
                   ),
                   SizedBox(
