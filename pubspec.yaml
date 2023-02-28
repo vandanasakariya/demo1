@@ -38,6 +38,8 @@ dependencies:
   get: ^4.6.5
   smooth_page_indicator: ^1.0.1
   sizer: ^2.0.15
+  http: ^0.13.5
+  dio: ^5.0.1
 
 dev_dependencies:
   flutter_test:
